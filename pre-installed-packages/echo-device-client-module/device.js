@@ -11,14 +11,14 @@ function Device() {
   CdifUtil.createServiceClient({
     deviceID: 'b752c14b-27ec-5374-a2ca-0ce71c247566',
     serviceID: 'urn:apemesh-com:serviceID:echoService',
-    appKey: 'bc978ee5d6ffaa4ea176d4fe4812c543d1ca6111'
+    appKey: 'aabbcc'
   }, (err, client) => {this.client = client});
 
   CdifUtil.createServiceClient({
     deviceID: 'b752c14b-27ec-5374-a2ca-0ce71c247566',
     serviceID: 'urn:apemesh-com:serviceID:errorInfoTestService',
-    appKey: 'bc978ee5d6ffaa4ea176d4fe4812c543d1ca6111'
-  }, (err, client) => {this.errorInfoTestclient = client});  
+    appKey: 'aabbcc'
+  }, (err, client) => {this.errorInfoTestclient = client});
 }
 
 CdifUtil.inherits(Device, CdifDevice);
